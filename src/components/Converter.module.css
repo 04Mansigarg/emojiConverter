@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(246, 214, 219);
+}
+.navbar{
+    background-color: black;
+    height: 3em;
+    font-size: 1em;
+    font-weight: bold;
+}
+.navbar>div{
+    display: flex;
+    justify-content: right;
+    padding: 0.8% 2% 0 0;
+    column-gap: 2em;
+}
+.navbar > div > .link{
+    text-decoration: none;
+    color:rgb(246, 214, 219) ;
+}
+.postHeading{
+    color: rgb(199, 16, 92);
+    width: 28%;
+    margin: auto;
+    border-bottom: 10px solid rgb(199, 16, 92) ;   
+}
+.postContainer{
+    width: 28%;
+    margin: auto;
+    background-color: black;
+    color:  white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 5px solid rgb(199, 16, 92);
+    margin-top: 2%;
+}
+.input{
+    margin-top: 1em;
+    width: 25%;
+    height: 2.5em;
+    border-radius: 6px;
+}
+.submit{
+    margin-top: 1em;
+    height:2.5em;
+    border-radius: 6px;
+    border: 0;
+    background-color: rgb(199, 16, 92);
+    color: rgb(246, 214, 219);
+    font-size: large;
+    font-weight: 600;
+    margin-left: 1%;
+}

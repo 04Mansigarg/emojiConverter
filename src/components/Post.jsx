@@ -4,7 +4,7 @@ import styles from "./Converter.module.css"
 export const Post = () => {
   const [posts, setPosts] = useState([])
   React.useEffect(() => {
-    fetch("http://localhost:8000/posts")
+    fetch("https://emoji-converter.herokuapp.com/posts")
       .then(res => res.json())
       .then(res => setPosts(res))
       .catch(err => console.log(err))

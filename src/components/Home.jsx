@@ -5,7 +5,7 @@ export const Home = () => {
   const [emojis, setEmojis] = useState([])
 
   React.useEffect(() => {
-    fetch("http://localhost:8000/emoji")
+    fetch("https://emoji-converter.herokuapp.com/emoji")
       .then(res => res.json())
       .then(res => setEmojis(res))
       .catch(err => console.log(err))
@@ -48,7 +48,7 @@ export const Home = () => {
     var data = {
       textInput: dat
     }
-    fetch("http://localhost:8000/posts", {
+    fetch("https://emoji-converter.herokuapp.com/posts", {
       method: "POST",
       body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" }
